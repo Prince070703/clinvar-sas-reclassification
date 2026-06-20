@@ -1,0 +1,37 @@
+Metric,Value
+Total variants analysed,102825
+Found in gnomAD SAS (exact match),32620
+Absent from gnomAD SAS,70205
+SAS AN >= 2000 (sufficient power),32616
+No SPDI (structural variants),1137
+Underpowered (SAS AN < 2000),4
+BA1 applied (criteria count),279
+BS1 applied (criteria count),820
+PM2_Supporting applied,69068
+No criteria (None),31517
+Genuine reclassifications (DOWNGRADE+RESOLVED),572
+Same-to-same confirmations excluded,527
+  -- Benign confirmed via BA1 (B→B excluded),151
+  -- LB confirmed via BS1 (LB→LB excluded),268
+  -- Benign confirmed via BS1 (B→B excluded),108
+Total P/LP variants,24631
+Total false positives (P/LP->B/LB),5
+Strict FP (Pathogenic->B/LB),1
+Moderate FP (Likely_Pathogenic->B/LB),4
+False positive rate % (of P/LP),0.02
+Strict FP rate % (of P/LP),0.004
+Moderate FP rate % (of P/LP),0.016
+Total VUS variants,35453
+VUS resolved to LB/B,126
+Conflicting variants resolved,345
+Conflict review flagged,0
+Max FAF95_sas (SAS found variants),1.0
+Avg FAF95_sas (SAS found variants),0.00526495
+FAF95 formula,"poisson.ppf(0.95, AC_sas) / AN_sas"
+Reference,Whiffin et al. Genet Med 2017
+Population,South Asian (SAS) ONLY — gnomAD v4.1
+No grpmax,TRUE — purely SAS population analysis
+Fix 1 applied,Benign+BA1 and LB+BS1 excluded from reclassif count
+Fix 2 applied,Strict FP vs Moderate FP categories separated
+Change 1 applied,Same-to-same explicitly listed and excluded
+Change 2 applied,07_gene_wise_breakdown.csv added with per-gene detail
